@@ -10,7 +10,8 @@ ffi.cdef('int compute_heavy_function_with_return(unsigned long);')
 # ffi.cdef('int compute_heavy_function_with_return(int);')
 
 
-_LIB = ffi.dlopen("../target/debug/libpit.so")
+# _LIB = ffi.dlopen("../target/debug/libpit.so")
+_LIB = ffi.dlopen("../target/release/libpit.so")
 
 # UNSAFE CASTS
 # def _as_f64(num):
