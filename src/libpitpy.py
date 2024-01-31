@@ -1,4 +1,4 @@
-from typing import Dict, List
+from typing import List
 from benchmark import time_it
 
 
@@ -21,7 +21,6 @@ def compute_heavy_function_with_return(n: int):
     return count
 
 @time_it("PYTHON")
-def function_with_parameters_and_return(an_integer: int, a_str: str, a_list: List, a_dict: Dict):
-    return None
-
-
+def iter_over_list(l: List):
+    for e in l:
+        print(e)

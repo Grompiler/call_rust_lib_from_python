@@ -28,7 +28,6 @@ class Abi(metaclass=SingletonMeta):
         self.ffi.cdef("int compute_heavy_function_with_return_and_for_loop_outside(int);")
         self.ffi.cdef("int compute_for_loop_outside();")
         self.ffi.cdef("int compute_for_loop_inside(int);")
-        # self.ffi.cdef('int compute_heavy_function_with_return(int);')
 
     def load_lib(self):
         self._lib = self.ffi.dlopen("../target/release/libpit.so")
@@ -62,9 +61,3 @@ class Abi(metaclass=SingletonMeta):
     @time_it(name="RUST LOOP INSIDE")
     def compute_for_loop_inside(self, n: int):
         return self._lib.compute_for_loop_inside(n)
-
-    # @time_it(name="RUST")
-    # @staticmethod
-    # def function_with_parameters_and_return(an_integer: int, a_str: str, a_list: List, a_dict: Dict):
-    #     return _LIB.function_with_parameters_and_return(an_integer, a_str, a_list, a_dict)
-    #
