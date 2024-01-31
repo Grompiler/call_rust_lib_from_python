@@ -1,5 +1,8 @@
-import libpitrs as rs
+from libpitrs import Abi
 import libpitpy as py
+
+
+rs = Abi()
 
 rs.print_function()
 
