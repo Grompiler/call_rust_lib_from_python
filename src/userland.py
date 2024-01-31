@@ -16,11 +16,19 @@ r = py.return_function()
 print(f"Original value: {r}, plus one: {r+1}")
 
 
-N = 100_000_000
+N = 100_000_00
 r = rs.compute_heavy_function_with_return(N)
 print(f"Heavy computation {r}")
 
 r = py.compute_heavy_function_with_return(N)
 print(f"Heavy computation {r}")
 
+r = rs.compute_heavy_function_with_return_and_for_loop_outside(N)
+print(f"Heavy computation with python for loop {r}")
 
+
+r = rs.compute_for_loop_outside(N)
+print(f"For loop outside {r}")
+
+r = rs.compute_for_loop_inside(N)
+print(f"For loop inside {r}")

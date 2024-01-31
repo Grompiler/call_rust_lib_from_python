@@ -4,28 +4,40 @@ Results so far
 
 ```
 ------------------------------
-> STARTING RS print_function
+> STARTING RUST print_function
 Hello from Rust!
-> ELAPSED TIME: 0:00:00.000069
+> ELAPSED TIME: 0:00:00.000099
 ------------------------------
-> STARTING PY print_function
+> STARTING PYTHON print_function
 Hello from Python!
 > ELAPSED TIME: 0:00:00.000003
 ------------------------------
-> STARTING RS return_function
-> ELAPSED TIME: 0:00:00.000032
+> STARTING RUST return_function
+> ELAPSED TIME: 0:00:00.000044
 Original value: 42, plus one: 43
 ------------------------------
-> STARTING PY return_function
-> ELAPSED TIME: 0:00:00.000001
+> STARTING PYTHON return_function
+> ELAPSED TIME: 0:00:00
 Original value: 42, plus one: 43
 ------------------------------
-> STARTING RS compute_heavy_function_with_return
-> ELAPSED TIME: 0:00:00.134674
-Heavy computation 13333334
+> STARTING RUST compute_heavy_function_with_return
+> ELAPSED TIME: 0:00:00.013589
+Heavy computation 1333334
 ------------------------------
-> STARTING PY compute_heavy_function_with_return
-> ELAPSED TIME: 0:00:05.363475
-Heavy computation 13333334
+> STARTING PYTHON compute_heavy_function_with_return
+> ELAPSED TIME: 0:00:00.571714
+Heavy computation 1333334
+------------------------------
+> STARTING RUST WITH PYTHON FOR LOOP compute_heavy_function_with_return_and_for_loop_outside
+> ELAPSED TIME: 0:00:01.699847
+Heavy computation with python for loop 1333334
+------------------------------
+> STARTING RUST LOOP OUTSIDE compute_for_loop_outside
+> ELAPSED TIME: 0:00:01.267169
+For loop outside 420000000
+------------------------------
+> STARTING RUST LOOP INSIDE compute_for_loop_inside
+> ELAPSED TIME: 0:00:00.000086
+For loop inside 420000000
 
 ```
