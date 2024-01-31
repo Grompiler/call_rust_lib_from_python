@@ -11,5 +11,6 @@ name = "pit"
 crate-type = ["dylib"]
 
 [dependencies]
+pyo3 = { version = "0.20.2", features = ["extension-module"] }
 
 
