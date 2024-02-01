@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Dict
 from benchmark import time_it
 
 
@@ -22,5 +22,10 @@ def compute_heavy_function_with_return(n: int):
 
 @time_it("PYTHON")
 def iter_over_list(l: List):
+    for e in l:
+        print(e)
+
+@time_it("PYTHON")
+def iter_over_list_of_dict(l: List[Dict]):
     for e in l:
         print(e)

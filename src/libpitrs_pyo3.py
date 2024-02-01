@@ -2,7 +2,7 @@ import sys
 sys.path.append("../target/release")
 
 import libpit
-from typing import List
+from typing import List, Dict
 from benchmark import time_it
 
 
@@ -22,4 +22,8 @@ def compute_heavy_function_with_return(n: int):
 @time_it(name="RUST CLASSIC IMPORT")
 def iter_over_list(l: List):
     return libpit.iter_over_list(l)
+
+@time_it(name="RUST CLASSIC IMPORT")
+def iter_over_list_of_dict(l: List[Dict]):
+    return libpit.iter_over_list_of_dict(l)
 

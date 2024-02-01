@@ -6,51 +6,51 @@ Results so far
 ------------------------------
 > STARTING RUST print_function
 Hello from Rust!
-> ELAPSED TIME: 0:00:00.000093
+> ELAPSED TIME: 0:00:00.000072
 ------------------------------
 > STARTING PYTHON print_function
 Hello from Python!
-> ELAPSED TIME: 0:00:00.000003
+> ELAPSED TIME: 0:00:00.000006
 ------------------------------
 > STARTING RUST CLASSIC IMPORT print_function
 Hello from Rust! Classic import
-> ELAPSED TIME: 0:00:00.000003
+> ELAPSED TIME: 0:00:00.000005
 ------------------------------
 > STARTING RUST return_function
-> ELAPSED TIME: 0:00:00.000033
+> ELAPSED TIME: 0:00:00.000051
 Original value: 42, plus one: 43
 ------------------------------
 > STARTING PYTHON return_function
-> ELAPSED TIME: 0:00:00.000001
+> ELAPSED TIME: 0:00:00.000002
 Original value: 42, plus one: 43
 ------------------------------
 > STARTING RUST CLASSIC IMPORT return_function
-> ELAPSED TIME: 0:00:00.000001
+> ELAPSED TIME: 0:00:00.000002
 Original value: 42, plus one: 43
 ------------------------------
 > STARTING RUST compute_heavy_function_with_return
-> ELAPSED TIME: 0:00:00.013815
-Heavy computation 1333334
+> ELAPSED TIME: 0:00:00.135534
+Heavy computation 13333334
 ------------------------------
 > STARTING PYTHON compute_heavy_function_with_return
-> ELAPSED TIME: 0:00:00.545133
-Heavy computation 1333334
+> ELAPSED TIME: 0:00:05.584844
+Heavy computation 13333334
 ------------------------------
 > STARTING RUST CLASSIC IMPORT compute_heavy_function_with_return
-> ELAPSED TIME: 0:00:00.013675
-Heavy computation 1333334
+> ELAPSED TIME: 0:00:00.134142
+Heavy computation 13333334
 ------------------------------
 > STARTING RUST WITH PYTHON FOR LOOP compute_heavy_function_with_return_and_for_loop_outside
-> ELAPSED TIME: 0:00:01.696763
-Heavy computation with python for loop 1333334
+> ELAPSED TIME: 0:00:16.895703
+Heavy computation with python for loop 13333334
 ------------------------------
 > STARTING RUST LOOP OUTSIDE compute_for_loop_outside
-> ELAPSED TIME: 0:00:01.268818
-For loop outside 420000000
+> ELAPSED TIME: 0:00:13.188121
+For loop outside 4200000000
 ------------------------------
 > STARTING RUST LOOP INSIDE compute_for_loop_inside
-> ELAPSED TIME: 0:00:00.000069
-For loop inside 420000000
+> ELAPSED TIME: 0:00:00.000061
+For loop inside -94967296
 ------------------------------
 > STARTING PYTHON iter_over_list
 0
@@ -73,7 +73,7 @@ For loop inside 420000000
 17
 18
 19
-> ELAPSED TIME: 0:00:00.000045
+> ELAPSED TIME: 0:00:00.000074
 ------------------------------
 > STARTING RUST CLASSIC IMPORT iter_over_list
 0
@@ -96,6 +96,20 @@ For loop inside 420000000
 17
 18
 19
-> ELAPSED TIME: 0:00:00.000039
+> ELAPSED TIME: 0:00:00.000063
+------------------------------
+> STARTING PYTHON iter_over_list_of_dict
+{'a': 1, 'b': 2}
+{'b': 2}
+{'c': 3}
+{'d': 4}
+> ELAPSED TIME: 0:00:00.000027
+------------------------------
+> STARTING RUST CLASSIC IMPORT iter_over_list_of_dict
+{'a': 1, 'b': 2}
+{'b': 2}
+{'c': 3}
+{'d': 4}
+> ELAPSED TIME: 0:00:00.000008
 
 ```

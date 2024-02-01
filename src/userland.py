@@ -20,7 +20,7 @@ r = pyo3.return_function()
 print(f"Original value: {r}, plus one: {r+1}")
 
 
-N = 100_000_00
+N = 100_000_000
 r = rs.compute_heavy_function_with_return(N)
 print(f"Heavy computation {r}")
 
@@ -45,3 +45,10 @@ print(f"For loop inside {r}")
 l = list(range(20))
 py.iter_over_list(l)
 pyo3.iter_over_list(l)
+
+
+k = ["a", "b", "c", "d"]
+v = [1, 2 ,3 ,4]
+l = [{k[0]: v[0], k[1]: v[1]}, { k[1]: v[1]}, {k[2]: v[2]}, {k[3]: v[3]}]
+py.iter_over_list_of_dict(l)
+pyo3.iter_over_list_of_dict(l)
